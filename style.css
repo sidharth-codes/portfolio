@@ -1,0 +1,111 @@
+/* Technical Header Font */
+@font-face {
+  font-family: 'nexo-kora';
+  src: url('fonts/NexokoraTechnoRegular-LVvaD.otf');
+  font-weight: bolder;
+}
+
+/* Script Font - Updated to match your exact folder path */
+@font-face {
+  font-family: 'dancing';
+  src: url('fonts/Dancing_Script,Macondo,Major_Mono_Display,Roboto,Yuji_Boku/Dancing_Script/static/DancingScript-SemiBold.ttf');
+}
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --accent: #0000008a;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif; /* Clean professional secondary font */
+}
+
+/* --- REUSED & REFINED BUTTON --- */
+.button {
+  border-radius: 4px; /* Professional sharp edges */
+  border: 2px solid var(--text);
+  padding: 10px;
+  font-family: 'nexo-kora';
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #fff;
+}
+
+.text {
+  white-space: nowrap;
+  transform: translateX(30%);
+  transition: transform 0.5s ease;
+}
+
+.s2 { margin-left: 90px; }
+
+.button:not(.no-hover):hover .text { transform: translateX(-15%); }
+.button.active .text { transform: translateX(-29%); }
+
+.button:hover {
+  background-color: var(--text);
+  color: #fff;
+  box-shadow: 4px 4px 0px var(--accent); /* "Brutalist" shadow style */
+}
+
+/* --- LINK BOXES --- */
+.link-box {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--text);
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.link-box:hover {
+  background: var(--text);
+  color: #fff;
+}
+
+/* --- LAYOUT --- */
+nav {
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero { padding: 100px 10%; }
+.hero h1 { font-size: 5rem; line-height: 0.8; margin: 0; }
+.accent { color: var(--accent); font-style: italic; }
+.ab{font-family: 'dancing';}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0 10% 100px;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.repo-link { color: var(--text); text-decoration: none; border-bottom: 1px solid;}
+.robo{
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  right: -20%;
+}
