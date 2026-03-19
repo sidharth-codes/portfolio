@@ -121,3 +121,65 @@ nav {
   font-family: 'heading';
   font-weight: 10;
 }
+/* --- ACHIEVEMENTS SECTION --- */
+.achievements {
+  padding: 50px 10% 100px;
+}
+
+.status-box {
+  border: 2px dashed var(--accent);
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.updating-text {
+  font-family: 'nexo-kora';
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: var(--accent);
+}
+
+/* --- FOOTER --- */
+footer {
+  border-top: 2px solid var(--text);
+  padding: 60px 10% 30px;
+  background-color: var(--bg);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  font-family: 'nexo-kora';
+  font-size: 2rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin-top: 40px;
+}
+
+/* Simple animation for the "..." */
+.dot-flashing {
+  display: inline-block;
+  animation: flash 1.5s infinite linear;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
