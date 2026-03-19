@@ -10,6 +10,10 @@
   font-family: 'dancing';
   src: url('fonts/Dancing_Script,Macondo,Major_Mono_Display,Roboto,Yuji_Boku/Dancing_Script/static/DancingScript-SemiBold.ttf');
 }
+@font-face {
+  font-family: 'heading';
+  src: url('fonts/dancing_script/static/Yuji_boku/YujiBoku-Regular.ttf');
+}
 :root {
   --bg: #ffffff;
   --text: #000000;
@@ -107,7 +111,12 @@ nav {
 .robo{
   width: 100%;
   height: 500px;
-  position: absolute;
+  position: fixed;
   top: 100px;
   right: -20%;
+}
+.o1{
+  padding-left: 100px;
+  font-family: 'heading';
+  font-weight: 10;
 }
