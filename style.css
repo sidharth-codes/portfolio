@@ -21,6 +21,8 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family: 'Inter', sans-serif; /* Clean professional secondary font */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* --- REUSED & REFINED BUTTON --- */
