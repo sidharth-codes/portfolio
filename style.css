@@ -114,6 +114,7 @@ nav {
   position: fixed;
   top: 100px;
   right: -20%;
+  pointer-events: none;
 }
 .o1{
   padding-left: 100px;
