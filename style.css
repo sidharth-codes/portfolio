@@ -4,6 +4,10 @@
   src: url('fonts/NexokoraTechnoRegular-LVvaD.otf');
   font-weight: bolder;
 }
+@font-face {
+  font-family: 'main';
+  src: url(fonts/linkage-free/Linkage\ Free.otf);
+}
 
 /* Script Font - Updated to match your exact folder path */
 @font-face {
@@ -182,4 +186,8 @@ footer {
 @keyframes flash {
   0%, 100% { opacity: 0.2; }
   50% { opacity: 1; }
+}
+.logo{
+  font-family: 'main';
+  font-size: 5rem;
 }
